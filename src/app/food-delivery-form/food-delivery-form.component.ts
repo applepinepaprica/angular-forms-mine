@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 })
 export class FoodDeliveryFormComponent implements OnInit {
 
-  myForm: FormGroup; 
+  myForm: FormGroup;
 
   constructor(private fb: FormBuilder) { }
 
@@ -20,9 +20,11 @@ export class FoodDeliveryFormComponent implements OnInit {
       ]],
       email: ['', [
         Validators.required,
+        Validators.email
       ]],
       phone: ['', [
         Validators.required,
+        Validators.pattern("[0-9]*")
       ]],
       address: ['', [
         Validators.required

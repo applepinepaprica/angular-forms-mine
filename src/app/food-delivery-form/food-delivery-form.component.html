@@ -1,4 +1,30 @@
 <form [formGroup]="myForm">
-    <input formControlName="email">
-    <input formControlName="phone">
+
+  <mat-form-field>
+    <input matInput formControlName="name" placeholder="name">
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput formControlName="email" placeholder="email">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput formControlName="phone" placeholder="phone">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput formControlName="address" placeholder="address">
+  </mat-form-field>
+
+  <mat-form-field>
+    <textarea matInput formControlName="comment" placeholder="comment"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select formControlName="payment_selector" placeholder="payment">
+      <mat-option value="Card">Card</mat-option>
+      <mat-option value="Cash">Cash</mat-option>
+    </mat-select>
+  </mat-form-field>
+
 </form>

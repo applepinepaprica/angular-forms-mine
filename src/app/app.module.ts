@@ -6,6 +6,9 @@ import { FoodDeliveryFormComponent } from './food-delivery-form/food-delivery-fo
 
 import { ReactiveFormsModule } from '@angular/forms';
 
+import {MaterialModule} from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,6 +17,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
